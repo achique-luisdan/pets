@@ -5,21 +5,19 @@
   --base: #fec7d7;
   --contrast: #f1f1e6; 
   --font:  Nunito;
-  --grey: #535353; 
 }
 
 body {
   font-family: var(--font);
   background-color: var(--base) ;
 }
+main {
+  padding: 8%;
+}
 
 h1, h2, h3{
   color: var(--primary);
   font-weight: bold;
-}
-
-main {
-  padding: 8%;
 }
 
 section.categories > div.row {
@@ -36,27 +34,67 @@ section.categories > div.row > div.colunm {
   padding: 2%;
 }
 
-
 section.categories > div.row > div.colunm > figure{
-  width: 50%;
+  height: 50px;
+  padding: 2%;
   margin: 0%;
+  border-radius: 100%;
+  background-color: var(--accent);
   align-self: center;
 }
 
-section.categories > div.row > div.colunm > figure{
-  border-radius: 100%;
-  padding: 2%;
-  background-color: var(--accent);
-}
-
 section.categories > div.row > div.colunm > figure > img{
-  width: 100%;
+  width: 50px;
 }
-
 
 section.categories > div.row > div.colunm > span{
   align-self: center;
   text-align: center;
   width: 100%;
   color:  var(--contrast);
+}
+
+
+/****/
+section.pets > div.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+section.pets > div.row > div.colunm {
+  width: 50%;
+  border-radius: 15px;
+}
+
+
+section.pets > div.row > div.colunm > figure{
+  height: 100px;
+  margin: 0%;
+  border-radius: 25px;
+  align-self: center;
+  height: 200px; 
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;  
+  margin: 10px;
+  
+}
+
+section.pets > div.row > div.colunm > figure > img {
+  object-fit: cover;
+  width: 100%;
+  position: absolute;
+}
+
+section.pets > div.row > div.colunm > figure > span{
+  align-self: end;
+  z-index: 1000;
+  color:  var(--contrast);
+  background-color: rgba(10, 0, 0, 0.481);
+  box-shadow: 40px 40px 40px 40px rgb(0, 0, 0);
+  padding: 1%;
+  width: 100%;
+  text-align: center;
 }
