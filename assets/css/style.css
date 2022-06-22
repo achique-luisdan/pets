@@ -129,7 +129,7 @@ section.pets > div.row > div.colunm:nth-child(even) {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1920px) {
   section.pets > div.row > div.colunm {
     width: 20%;
     border-radius: 15px;
