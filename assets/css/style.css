@@ -1,0 +1,62 @@
+
+:root { 
+  --primary:#0e172c ;
+  --accent: #85d1ce; 
+  --base: #fec7d7;
+  --contrast: #f1f1e6; 
+  --font:  Nunito;
+  --grey: #535353; 
+}
+
+body {
+  font-family: var(--font);
+  background-color: var(--base) ;
+}
+
+h1, h2, h3{
+  color: var(--primary);
+  font-weight: bold;
+}
+
+main {
+  padding: 8%;
+}
+
+section.categories > div.row {
+  display: flex;
+}
+
+section.categories > div.row > div.colunm {
+  width: 50%;
+  height: 100px;
+  margin: 1%;
+  background-color: var(--primary);
+  border-radius: 15px;
+  display: flex;
+  padding: 2%;
+}
+
+
+section.categories > div.row > div.colunm > figure{
+  width: 50%;
+  margin: 0%;
+  align-self: center;
+}
+
+section.categories > div.row > div.colunm > figure{
+  border-radius: 100%;
+  padding: 2%;
+  background-color: var(--accent);
+}
+
+section.categories > div.row > div.colunm > figure > img{
+  width: 100%;
+}
+
+
+section.categories > div.row > div.colunm > span{
+  align-self: center;
+  text-align: center;
+  width: 100%;
+  color:  var(--contrast);
+}
