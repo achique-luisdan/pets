@@ -62,10 +62,7 @@ section.pets > div.row {
 }
 
 
-section.pets > div.row > div.colunm {
-  width: 50%;
-  border-radius: 15px;
-}
+
 
 
 section.pets > div.row > div.colunm > figure{
@@ -106,3 +103,36 @@ section.pets > div.row > div.colunm > figure > span > p{
   font-weight: lighter;
   font-size: small;
 }
+
+section.pets > div.row > div.colunm:nth-child(even) {
+  margin-top: 5%;
+}
+
+@media (min-width: 400px) {
+  section.pets > div.row > div.colunm {
+    width: 50%;
+    border-radius: 15px;
+  }
+}
+
+@media (min-width: 750px) {
+  section.pets > div.row > div.colunm {
+    width: 33%;
+    border-radius: 15px;
+  }
+}
+
+@media (min-width: 1000px) {
+  section.pets > div.row > div.colunm {
+    width: 25%;
+    border-radius: 15px;
+  }
+}
+
+@media (min-width: 1200px) {
+  section.pets > div.row > div.colunm {
+    width: 20%;
+    border-radius: 15px;
+  }
+}
+
