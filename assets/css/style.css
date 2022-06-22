@@ -112,7 +112,7 @@ section.pets > div.row > div.colunm {
   border-radius: 15px;
 }
 
-@media (min-width: 400px) {
+@media (min-width: 600px) {
   section.pets > div.row > div.colunm {
     width: 50%;
   }
@@ -124,13 +124,13 @@ section.pets > div.row > div.colunm {
   }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1920px) {
   section.pets > div.row > div.colunm {
     width: 25%;
   }
 }
 
-@media (min-width: 1920px) {
+@media (min-width: 2000px) {
   section.pets > div.row > div.colunm {
     width: 20%;
   }
